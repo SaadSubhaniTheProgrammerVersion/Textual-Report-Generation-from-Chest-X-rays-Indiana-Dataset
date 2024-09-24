@@ -1,0 +1,16 @@
+# Ignore entire folders
+images/
+Padchest/
+results/
+logs/
+
+# Ignore specific files
+BioGPT_SAME.ipynb
+BioGPT.ipynb
+Clinuical_Bert.ipynb
+Custom_Sentiment_Analysis.ipynb
+hugging_face.ipynb
+indianadataset.ipynb
+kaggle.ipynb
+model.safetensors
+nlp.ipynb
