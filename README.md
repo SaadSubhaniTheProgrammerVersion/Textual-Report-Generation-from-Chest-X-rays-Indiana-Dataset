@@ -28,3 +28,21 @@ To get started, you'll need to download the dataset. The dataset includes a `rep
   
   ```bash
   streamlit run final.py
+
+
+### 4. **Running as a Web Application**
+
+- **File**: `app.py`
+
+  If you'd prefer to run the model as part of a web application, `app.py` in the `ChexNet-Report-Generation` folder sets up the model on a Flask server. This allows for easy integration with any frontend of your choice.
+
+## How to Use
+
+1. **Download the Dataset**: Make sure to download the Indiana Chest X-ray dataset and extract the `reports.csv`.
+2. **Fine-tune BioGPT**: Run `BioGPT-FINAL.ipynb` to fine-tune BioGPT on the reports.
+3. **Generate Image Embeddings**: Use `create_model.py` to set up ChexNet and extract embeddings from the chest X-rays.
+4. **Run the Full Pipeline**:
+   - Update the fine-tuned model path in `final.py`.
+   - Use `streamlit run final.py` to access the model via a Streamlit UI.
+   - Optionally, run `app.py` to deploy the model via a Flask server for integration into your own web application.
+
